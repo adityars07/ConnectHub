@@ -57,7 +57,7 @@ export function ChatCard({ conversation, isActive, onClick }: ChatCardProps) {
               <Pin className="h-3 w-3 text-muted-foreground rotate-45" />
             )}
             {conversation.lastMessage && (
-              <span className="text-[11px] text-muted-foreground">
+              <span suppressHydrationWarning className="text-[11px] text-muted-foreground">
                 {formatTime(conversation.lastMessage.timestamp)}
               </span>
             )}

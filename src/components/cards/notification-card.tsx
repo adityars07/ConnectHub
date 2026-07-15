@@ -92,7 +92,7 @@ export function NotificationCard({
         <p className="text-xs text-muted-foreground mt-0.5 line-clamp-2">
           {notification.description}
         </p>
-        <p className="text-[11px] text-muted-foreground/70 mt-1.5">
+        <p suppressHydrationWarning className="text-[11px] text-muted-foreground/70 mt-1.5">
           {formatRelativeTime(notification.timestamp)}
         </p>
       </div>

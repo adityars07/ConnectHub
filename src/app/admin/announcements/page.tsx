@@ -221,7 +221,7 @@ export default function AnnouncementsPage() {
                       <p className="text-xs text-muted-foreground mt-0.5 line-clamp-1">
                         {announcement.description}
                       </p>
-                      <p className="text-[10px] text-muted-foreground/70 mt-1">
+                      <p suppressHydrationWarning className="text-[10px] text-muted-foreground/70 mt-1">
                         {formatRelativeTime(announcement.scheduledAt)} ·{" "}
                         {announcement.audience === "all"
                           ? "Everyone"

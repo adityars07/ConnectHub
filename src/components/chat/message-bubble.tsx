@@ -37,7 +37,7 @@ export function MessageBubble({ message, index }: MessageBubbleProps) {
             isOutgoing ? "text-white/70" : "text-muted-foreground"
           )}
         >
-          <span className="text-[10px]">{formatTime(message.timestamp)}</span>
+          <span suppressHydrationWarning className="text-[10px]">{formatTime(message.timestamp)}</span>
           {isOutgoing && (
             message.isRead ? (
               <CheckCheck className="h-3.5 w-3.5" />

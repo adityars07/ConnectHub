@@ -43,7 +43,7 @@ export function ChatHeader({ user, onBack, showBack }: ChatHeaderProps) {
         </div>
         <div>
           <h3 className="text-sm font-semibold">{user.name}</h3>
-          <p className="text-xs text-muted-foreground">
+          <p suppressHydrationWarning className="text-xs text-muted-foreground">
             {user.isOnline
               ? "Online"
               : `Last seen ${formatRelativeTime(user.lastSeen)}`}

@@ -178,7 +178,7 @@ export default function AdminDashboard() {
                   </span>
                 </div>
               </div>
-              <span className="text-xs text-muted-foreground flex-shrink-0">
+              <span suppressHydrationWarning className="text-xs text-muted-foreground flex-shrink-0">
                 {formatRelativeTime(activity.time)}
               </span>
             </motion.div>
